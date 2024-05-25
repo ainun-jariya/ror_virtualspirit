@@ -4,7 +4,6 @@ if File.directory?(path)
     puts "#{path} is a directory."
     files = Dir.glob("#{path}/*")
 
-    # Print the list of files
     h_comparing = Hash.new(0)
     diff_values = Hash.new()
     files.each_with_index do |file, index|
